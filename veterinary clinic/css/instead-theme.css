@@ -1,0 +1,30 @@
+.dog1 .btn{background-color: #30ff1e;border: #30ff1e;}
+
+.dropdown-menu > li > a:hover,
+.features .box,
+.work .d2,.work .d3,
+.our-features .data,
+.join-to-us .container hr,
+.join-to-us .btn,
+.footer,
+.option-box i{background-color: #5212db;}
+
+.features .box2,
+.our-features .d2,
+.our-features .d4,
+.join-to-us .container {background-color: #30ff1e;}
+
+.body-dog h1 span,
+.training .data h2{color: #5212db;}
+
+.training .data h4{color: #30ff1e}
+
+.dropdown-menu{border-top: 3px solid #5212db;}
+
+.work .div4 {background-image: linear-gradient(#30ff1e, #30ff1e), linear-gradient(#5212db, silver);}
+
+.body-dog .dog1 .btn {background-image: linear-gradient(#5212db, silver), linear-gradient(#30ff1e, silver);} 
+
+.work .d2, .work .d3 {background-image: linear-gradient(#5212db, #5212db), linear-gradient(#30ff1e, silver);} 
+
+.option-box .color-option{border: 3px solid #5212db;}

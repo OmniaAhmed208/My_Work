@@ -1,0 +1,28 @@
+.dropdown-menu > li > a:hover,
+.features .box,
+.work .d2,.work .d3,
+.our-features .data,
+.join-to-us .container hr,
+.join-to-us .btn,
+.footer,
+.option-box i{background-color: #e63636;}
+
+.features .box2,
+.our-features .d2,
+.our-features .d4,
+.join-to-us .container {background-color: dodgerblue;}
+
+.body-dog h1 span,
+.training .data h2{color: #e63636;}
+
+.training .data h4{color: dodgerblue}
+
+.dropdown-menu{border-top: 3px solid #e63636;}
+
+.body-dog .dog1 .btn {background-image: linear-gradient(#e63636, silver), linear-gradient(dodgerblue, silver);}
+
+.work .div4 {background-image: linear-gradient(#e63636, #e63636), linear-gradient(dodgerblue, silver);}
+
+.work .d2, .work .d3 {background-image: linear-gradient(dodgerblue, dodgerblue), linear-gradient(#e63636, silver);} 
+
+.option-box .color-option{border: 3px solid #e63636;}
