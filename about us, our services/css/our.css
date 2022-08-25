@@ -1,0 +1,191 @@
+body{padding-top: 51px;}
+
+.navbar-brand {color: purple !important; font-size: 25px;}
+
+.navbar-nav{margin-left: 26%;}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: purple;
+}
+
+.navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 7px;
+    margin-bottom: -12px;
+    border-radius: 3px;
+}
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus{
+    color: purple;
+    background-color: transparent;
+    font-weight: 600;
+}
+
+#linefori {margin-top: 9px;} /*ul of nav navbar-nav navbar-right*/
+
+.navbar-nav > li i{
+    font-size: 18px;
+    color: purple;
+    border: 1px solid purple;
+    padding: 5px;
+    margin-left:0px;
+    border-radius: 3px;
+}
+
+#color{margin-top: -9px !important;}
+
+.navbar-nav > li i:hover{color: #fff; background-color: purple;}
+
+.navbar-nav > li > .dropdown-menu{
+    min-width: 122px;
+    margin: 12px -28px 0 0;
+    background-color: #eee;
+    border: transparent;
+}
+
+.navbar-nav > li > .dropdown-menu li{
+    width: 26px;
+    height: 27px;
+    float: left;
+    margin-left: 11px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+/* =========================== intro ============================= */
+.intro{
+    background-color: #eee;
+    padding-top: 165px;
+    padding-bottom: 190px;
+}
+
+.intro .data{
+    background-color: #fff;
+    width: 427px;
+    margin: auto;
+    padding:20px
+}
+
+.intro h1{color:purple; padding-bottom: 6px;}
+
+.intro button {
+    background-color: purple;
+    color: #fff;
+    border: transparent;
+    border-radius: 4px;
+    padding: 6px;
+}
+
+/* ========================= about us ========================== */
+
+.about-us h2{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 50px;
+    color: purple;
+    font-family: 'Playball', cursive;
+}
+
+.about-us img{width: 435px; padding-bottom: 20px;}
+
+.about-us h3{color: purple;}
+
+/* ===================== services =================== */
+
+.services{background-color: #eee; margin-top: 70px;}
+
+.services h2{
+    padding-top: 40px;
+    padding-bottom: 88px;
+    font-size: 50px;
+    color: purple;
+    font-family: 'Playball', cursive;
+}
+
+.services .data{
+    width: 230px;
+    height: 230px;
+    margin: auto;
+    background-color: #fff;
+    margin-bottom: 100px;
+    border-radius: 20px;
+    transform: rotate(45deg);
+}
+
+.services i{margin: 19px 100px 0px -63px;color: purple;}
+
+.services h3 {transform: rotate(-45deg);margin: 3px 8px 0 -74px;color: purple;}
+
+.services p {transform: rotate(-45deg); margin: -9px 0 0 32px;}
+
+/* =========================== our-team ====================== */
+.our-team{padding-top: 70px;padding-bottom: 70px;}
+
+.our-team h2{font-family: 'Playball', cursive;color: purple;font-size: 50px;}
+
+.our-team .team{
+    background-color: #eee;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 90px;
+    border-radius: 20px;
+    width: 300px;
+    padding: 0 20px 20px 20px;
+}
+
+.our-team .team .img-responsive{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+    top: -47px;
+}
+
+.our-team .team h3{
+    color: purple;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 150px;
+    margin: 20px auto;
+    margin-top: -18px;
+}
+
+.our-team .team h3::before{
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 17px;
+    border-top: 2px solid purple;
+    border-left: 2px solid purple;
+    margin: -10px 0 0 -24px;
+}
+
+.our-team .team h3::after{
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 17px;
+    border-bottom: 2px solid purple;
+    border-right: 2px solid purple;
+    margin: 18px 0 0 3px;
+}
+
+/* ================== media =========================== */
+@media (min-width: 786px) and (max-width:991px){
+    .about-us img{width: 350px;}
+}
+@media (max-width:991px){
+    .navbar-nav {margin-left: 16%;}
+    
+    .our-team .team{width: auto;}
+}
+@media (max-width:1200px){
+    #linefori {margin-top: 10px;margin-left: 0;}
+}

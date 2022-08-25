@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"> <!--for responsive-->
+    <title>Bootstrap 4</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!--must-->
+    <link rel="stylesheet" href="css/font-awesome.min.css"> <!--for fonts-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+     
+      <!-- Start Upper-bar -->
+      <div class="upper-bar">
+        <div class="container">
+          <div class="row">
+            <div class="info col-sm">
+              <i class="fa fa-phone"></i> <span>05050505</span>, <i class="fa fa-envelope-o"></i> info@elitecorp.com
+            </div>
+            <div class="info col-sm">
+              <span>Let's work together</span>,
+              <span class="get-quote">Get Quote</span> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  =============== navbar =================  -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <span>Elite</span><span>Corp</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainnav" aria-controls="mainnav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainnav">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0" style="margin-left: auto;">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Block</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- ============ start Slider ================ -->
+      <div class="slider">
+          <div id="slider" class="carousel slide" data-bs-ride="false">
+            
+            <div class="carousel-inner">
+              <!-- Wrapper for slides -->
+              <h1>We 're an Independent <br>Design and <span>Development</span><br> Agency</h1>
+              <div class="layout"></div> <!-- for transparent layer -->
+              
+              <div class="carousel-item carousel-one active"></div>
+              <div class="carousel-item carousel-two"></div>
+              <div class="carousel-item carousel-three"></div>
+            </div>
+
+            <!-- indicator -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+          </div>
+      </div>
+      <!-- ================ features =================== -->
+      <div class="features text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-sm-6">
+              <i class="fa fa-home fa-2x rounded-circle"></i>
+              <h3>Grat Idea</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text
+                ever since the 1500s.</p>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <i class="fa fa-home fa-2x rounded-circle"></i>
+              <h3>Grat Idea</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text
+                ever since the 1500s.</p>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <i class="fa fa-home fa-2x rounded-circle"></i>
+              <h3>Grat Idea</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text
+                ever since the 1500s.</p>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <i class="fa fa-home fa-2x rounded-circle"></i>
+              <h3>Grat Idea</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text
+                ever since the 1500s.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============== overview =============== -->
+      <div class="overview text-center">
+        <div class="container">
+          <h2 class="h1">campany overview</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum
+            passages.</p>
+          <h4>Let's Start Today</h4>
+          <button>View More</button>  
+        </div>
+      </div>
+    
+      <!-- ============ featured work ============= -->
+
+      <div class="featured-work text-center">
+        <div class="container">
+          <h2 class="h1">Featured Work</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum
+            passages.</p>
+          
+          <ul class="list-unstyled row">
+            <li data-class=".all" class="active col-md">All</li>
+            <li data-class=".furniture" class="col-md">Furniture</li>
+            <li data-class=".logos" class="col-md">Logos</li>
+            <li data-class=".kitchens" class="col-md">Kitchens</li>
+            <li data-class=".marketing" class="col-md">Marketing</li>
+            <li data-class=".videos" class="col-md">Videos</li>
+          </ul>  
+        </div>
+        
+        <div class="father-img">
+          <div class="row">
+            <div class="col-md">
+              <img class="furniture" src="img/00.jpg">
+            </div>
+            <div class="col-md">
+              <img class="marketing" src="img/02.jpg">
+            </div>
+            <div class="col-md">
+              <img class="furniture" src="img/12.jpg">
+            </div>
+            <div class="col-md">
+              <img class="furniture" src="img/07.jpg">
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="col-md">
+              <img class="furniture" src="img/08.jpg">
+            </div>
+            <div class="col-md">
+              <img class="kitchens" src="img/01.jpg">
+            </div>
+            <div class="col-md">
+              <img class="furniture" src="img/11.jpg">
+            </div>
+            <div class="col-md">
+              <img class="marketing" src="img/10.jpg">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ================= Latest Posts ===================-->
+      <div class="latest-posts">
+        <div class="container">
+          <h2 class="h1 text-center">Latest Posts</h2>
+          <p class="para-posts text-center">Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum
+            passages.</p>
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="card">
+                <img class="card-img-top" src="img/lap1.avif">
+                <div class="card-body">
+                  <h4 class="card-title">Lorem Ipsum is simply dummy text of the printing and</h4>
+                  <h6 class="card-subtitle mb-2 text-muted">March 24 2017</h6>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text
+                    ever since the 1500s. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum
+                    passages.</p>
+                  <a href="#" class="card-link">Read More</a>  
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="card">
+                <img class="card-img-top" src="img/lap3.avif">
+                <div class="card-body">
+                  <h4 class="card-title">Lorem Ipsum is simply dummy text of the printing and</h4>
+                  <h6 class="card-subtitle mb-2 text-muted">March 24 2017</h6>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text
+                    ever since the 1500s. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum
+                    passages.</p>
+                  <a href="#" class="card-link">Read More</a>  
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="card">
+                <img class="card-img-top" src="img/lap2.avif">
+                <div class="card-body">
+                  <h4 class="card-title">Lorem Ipsum is simply dummy text of the printing and</h4>
+                  <h6 class="card-subtitle mb-2 text-muted">March 24 2017</h6>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text
+                    ever since the 1500s. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum
+                    passages.</p>
+                  <a href="#" class="card-link">Read More</a>  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- =============== testimonials ====================== -->
+      <div class="testimonials">
+        <div class="layout"></div>
+          <div id="testimonials" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#testimonials" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#testimonials" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#testimonials" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="carousel-caption d-block">
+                  <img src="img/per1.jpg" alt="...">
+                  <h5>Mohamed Farag</h5>
+                  <span>Company CEO</span>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption d-block">
+                  <img src="img/per1.jpg" alt="...">
+                  <h5>Ahmed Mosaad</h5>
+                  <span>Company Manager</span>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption d-block">
+                  <img src="img/per1.jpg" alt="...">
+                  <h5>John Adam</h5>
+                  <span>Free Lancer</span>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonials" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonials" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </div>
+
+      <!-- ==================== Pricing Table ============== -->
+
+      <div class="Pricing-table text-center">
+        <div class="container">
+          <h2 class="h1">Pricing Table</h2>
+          <p class="para-posts">Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum
+            passages.</p>
+          <div class="row">
+            <div class="info col-lg-4 col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Small Business</h4>
+                  <h6 class="card-subtitle mb-2 text-muted">Lorem Ipsum</h6>
+                  <p>$99/<span>Year</span></p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Lorem Ipsum</li>
+                    <li class="list-group-item">Lorem Ipsum</li>
+                    <li class="list-group-item">Lorem Ipsum</li>
+                    <li class="list-group-item">Lorem Ipsum</li>
+                    <li class="list-group-item">Lorem Ipsum</li>
+                  </ul>
+                  <a href="#" class="card-link">Buy Now</a>  
+                </div>
+              </div>
+            </div>
+            <div class="info col-lg-4 col-md-6">
+              <div class="card Corporate">
+                <div class="card-body">
+                  <h4 class="card-title">Corporate</h4>
+                  <h6 class="card-subtitle mb-2 text-muted">Lorem Ipsum</h6>
+                  <p>$199/<span>Year</span></p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Lorem Ipsum</li>
+                    <li class="list-group-item">Lorem Ipsum</li>
+                    <li class="list-group-item">Lorem Ipsum</li>
+                    <li class="list-group-item">Lorem Ipsum</li>
+                    <li class="list-group-item">Lorem Ipsum</li>
+                  </ul>
+                  <a href="#" class="card-link">Buy Now</a>  
+                </div>
+              </div>
+            </div>
+            <div class="info col-lg-4 col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Enterprise</h4>
+                  <h6 class="card-subtitle mb-2 text-muted">Lorem Ipsum</h6>
+                  <p>$299/<span>Year</span></p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Lorem Ipsum</li>
+                    <li class="list-group-item">Lorem Ipsum</li>
+                    <li class="list-group-item">Lorem Ipsum</li>
+                    <li class="list-group-item">Lorem Ipsum</li>
+                    <li class="list-group-item">Lorem Ipsum</li>
+                  </ul>
+                  <a href="#" class="card-link">Buy Now</a>  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===================== choose us =============== -->
+
+      <div class="choose-us">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="info col-md-6">
+              <img src="img/03.jpg">
+            </div>
+            <div class="info col-md-6">
+              <h2 class="h1">Why Choose Us</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
+              <a href="#">View More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===================== statistics ============= -->
+
+      <div class="stats text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="stats-box">
+                <i class="fa fa-user fa-wd fa-4x"></i>
+                <span>624</span>
+                <p>Happy Clients</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="stats-box">
+                <i class="fa fa-heart fa-wd fa-4x"></i>
+                <span>624</span>
+                <p>Amazing Tours</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="stats-box">
+                <i class="fa fa-briefcase fa-wd fa-4x"></i>
+                <span>624</span>
+                <p>Partners</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="stats-box">
+                <i class="fa fa-comments fa-wd fa-4x"></i>
+                <span>624</span>
+                <p>Questions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== contact us ============ -->
+
+      <div class="contact-us text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p>You think we're cool? let's work together</p>
+            </div>
+            <div class="col-md-6">
+              <a href="#">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= footer ==================== -->
+
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-lg-6">
+              <div class="info">
+                <h2 class="h1"><span>Elite</span><span>Corp</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="#">Read more</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="helpful-links">
+                <h2>HelpfulLinks</h2>
+                <div class="row">
+                  <div class="col">
+                    <ul class="list-unstyled">
+                      <li>About</li>
+                      <li>Portofolio</li>
+                      <li>Team</li>
+                      <li>Price</li>
+                      <li>Privacy</li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <ul class="list-unstyled">
+                      <li>FAQ</li>
+                      <li>Blog</li>
+                      <li>How it work</li>
+                      <li>Benefits</li>
+                      <li>Contact</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+             <div class="contact">
+              <h2>Contact Us</h2>
+              <ul class="list-unstyled">
+                <li>54958 Levo Road Near Red Fort, US</li>
+                <li>Phone: 012-2345678</li>
+                <li>Email: <a href="mailto:info@elitecorp.com?subject=Contact">info@elitecorp.com</a></li>
+              </ul>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ======================== copy right ==================== -->
+
+      <div class="copyright ">
+        <div class="container">
+          <div class="row">
+            <div class="col text-center text-sm-left text-uppercase">
+              Copyright 2017 EliteCorp &copy; All Right Reserved
+            </div>
+            <div class="col text-center text-sm-right">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-google-plus"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/popper.min.js"></script> <!--before bootstrap and for position-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/myjs.js"></script>
+
+    
+</body>
+</html>
