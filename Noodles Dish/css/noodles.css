@@ -94,7 +94,7 @@ body::-webkit-scrollbar-thumb {
     text-transform: uppercase;
     cursor: pointer;
 }
-.home img{margin-top: -150px;}
+.home img{margin-top: -150px;filter: drop-shadow(1px 15px 23px red);}
 
 @media (max-width:992px) {
     .home .parag h1{font-size: 40px;}
@@ -116,6 +116,7 @@ body::-webkit-scrollbar-thumb {
     box-shadow: 3px 0px 29px #3e01019e;
     padding: 20px 40px 20px 40px;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .menu .item2{background-color: #fff;color: #420006;}
@@ -126,6 +127,10 @@ body::-webkit-scrollbar-thumb {
     padding: 19px 20px 35px 20px;
     display: inline;
     border-radius: 0;
+    -webkit-transition: padding 0.4s ease-out ;
+    -moz-transition: padding 0.4s ease-out ;
+    -o-transition: padding 0.4s ease-out ;
+    transition: padding 0.4s ease-out ;
 }
 
 @media (max-width:992px) {
@@ -194,7 +199,7 @@ body::-webkit-scrollbar-thumb {
     padding:100px 0 70px 0;
     font-weight: bold;
 }
-.product .items{
+.product .info{
     background-color: #cd2020;
     border: 1px solid #fff;
     padding: 20px 26px;
@@ -202,7 +207,7 @@ body::-webkit-scrollbar-thumb {
     box-shadow: 3px 8px 14px #0000006b;
 }
 
-.product .items img{
+.product .info img{
     width: 200px !important;
     height: 150px;
     border-radius: 50%;
@@ -211,11 +216,11 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 20px;
 }
 
-.product .items h4{font-size: 17px;}
+.product .info h4{font-size: 17px;}
 
-.product .items .star{color: yellow;}
+.product .info .star{color: yellow;}
 
-.product .items .cart{
+.product .info .cart{
     color: #fff;
     float: right;
     margin-top: -26px;
@@ -234,16 +239,16 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-width:992px) {
     .product h2{font-size: 40px;padding: 70px 0 50px 0;}
-    .product .items{margin-bottom: 20px;}
-    .product .items img{width: 170px !important;}
+    .product .info{margin-bottom: 20px;}
+    .product .info img{width: 170px !important;}
 }
 @media (min-width:993px) {
-    .product .items img{width: 160px !important;}
+    .product .info img{width: 160px !important;}
 }
 /* ============== about us ============= */
 
 .about-us{padding-top: 130px;}
-.about-us img{margin-top: -145px;}
+.about-us img{margin-top: -145px;filter: drop-shadow(1px 15px 23px red);}
 .about-us h2{font-weight: bold;font-size: 50px;text-transform: uppercase;}
 .about-us p{padding:10px 0 15px 0;}
 
@@ -312,3 +317,4 @@ body::-webkit-scrollbar-thumb {
 /* ========== copy right =================== */
 
 .copy-right{margin: 40px 0 -13px 0;}
+.copy-right p{margin-bottom: 0rem;}
