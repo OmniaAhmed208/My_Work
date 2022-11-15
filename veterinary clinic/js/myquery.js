@@ -37,16 +37,58 @@ $(document).ready (function(){
     });
 
 
-    // chande theme color in box
-    var colorLi = $(".option-box ul li");
+    // chande theme color in box (way 1)
 
-    colorLi 
-    .eq(0).css("backgroundColor","#e63636").end()
-    .eq(1).css("backgroundColor","#5212db");
+    // var colorLi = $(".option-box ul li");
 
-    colorLi.click(function()
-    {
-        $("link[href*='theme']").attr("href", $(this).attr("data-value"));
+    // colorLi 
+    // .eq(0).css("backgroundColor","#e63636").end()
+    // .eq(1).css("backgroundColor","#5212db");
+
+    // colorLi.click(function()
+    // {
+    //     $("link[href*='theme']").attr("href", $(this).attr("data-value"));
+    // });
+
+    // chande theme color in box (way 2)
+    let color = document.querySelectorAll(".option-box li");
+    let link = document.querySelectorAll("link");
+    let arr = [];
+    
+    if(window.localStorage.getItem("link")){
+
+        link.forEach((link)=>{
+            arr.push(link);
+        });
+
+        arr[arr.length-1].removeAttribute('href');
+        arr[arr.length-1].setAttribute('href' , window.localStorage.getItem('link'))
+
+    }
+
+    color.forEach((i)=>{
+        i.addEventListener('click',(e)=>{
+
+            link.forEach((link)=>{
+    
+                if(e.currentTarget.getAttribute('data-value')==="css/default-theme.css"){
+                    if(link.getAttribute('href')=== "css/instead-theme.css"){
+                       link.removeAttribute('href');
+                       link.setAttribute('href' , "css/default-theme.css");
+                       window.localStorage.setItem("link",link.getAttribute('href'));
+                    } 
+                } 
+
+                if(e.currentTarget.getAttribute('data-value')==="css/instead-theme.css"){
+                    if(link.getAttribute('href')=== "css/default-theme.css") {
+                       link.removeAttribute('href')
+                       link.setAttribute('href' , "css/instead-theme.css")
+                       window.localStorage.setItem("link",link.getAttribute('href'));
+                    }
+                }
+
+            });
+        });
     });
-
+    
 });  

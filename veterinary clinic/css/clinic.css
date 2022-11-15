@@ -209,6 +209,7 @@ body::-webkit-scrollbar-thumb {
     height: 25px;
     margin-left: 15px;
     float: left;
+    cursor: pointer;
 }
 
 .option-box i{padding: 5px;cursor: pointer;}
