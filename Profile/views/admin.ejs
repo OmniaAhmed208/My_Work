@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+    <div class="all">
+        <div class="row rall">
+            <%- include("./partials/sidebar.ejs") %>
+            <div class="col-lg-10">
+                <div class="admin"> <!--admin starts-->
+                    <div class="container"> <!--container starts-->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h1>Dashboard</h1>
+                                <hr>
+                                <div class="info"> <!--info starts-->
+                                    <div class="callout">...</div>
+                                    <div class="callout">
+                                        <p>Number of Sites: <%= arrResult.length%></p>
+                                    </div>
+                                    <div class="callout">
+                                        <p>Number of Certificates: <span></span></p>
+                                    </div>
+                                    <div class="callout">
+                                        <p>Number of Visitors: <span></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="/img/typing-bro.png" alt="" class="introImg">
+                            </div>
+                        </div>
+    
+                        <div id="websites">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Image</th>
+                                        <th scope="col">Github</th>
+                                        <th scope="col">Behance</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                <% for(item of arrResult){ %>
+                                    <tr>
+                                        <th scope="row"><%=i++%></th>
+                                        <td><%= item.name %></td>
+                                        <td><img src="../uploads/<%= item.image %>" alt=""></td>
+                                        <td><%= item.github %></td>
+                                        <td><%= item.behance %></td>
+                                        <td>
+                                            <a href="/update/<%=item.id%>" class="btn btn-primary">Edit</a>
+                                            <a href="" onclick="deleteBtn('<%=item.id%>')" class="btn btn-danger">Delete</a>
+                                        </td>
+                                    </tr>
+                                <% } %>
+                                </tbody>
+                            </table>
+                        </div>
+        
+                        <div id="certificates">certificates</div>
+                        <div id="reviews">reviews</div>
+                    </div> <!--container ends-->
+                </div><!--admin ends-->
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function deleteBtn(id){
+            fetch(`/admin/`+id, { method: "DELETE" } )
+            .then((response)=> response.json())
+            .then((data)=> {
+               console.log(data); // console of website not terminal
+            //    window.location.href = data.mylink; // to make redirect to another page
+            })
+            .catch((err)=>console.log(err));
+        }
+    </script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>
