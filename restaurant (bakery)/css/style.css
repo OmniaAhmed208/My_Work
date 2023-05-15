@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Cairo:wght@300;400;700&family=IBM+Plex+Sans+Arabic:wght@400;700&family=Open+Sans:wght@400;500&family=Oswald:wght@400;700&family=Roboto:wght@100;400;500;700;900&display=swap'); /*font-family: 'Dancing Script', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Cairo:wght@300;400;700&family=Courgette&family=Dancing+Script:wght@700&family=Fjalla+One&family=IBM+Plex+Sans+Arabic:wght@400;700&family=Open+Sans:wght@400;500&family=Oswald:wght@400;700&family=Roboto:wght@100;400;500;700;900&display=swap');/*font-family: 'Courgette', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Cairo:wght@300;400;700&family=Fjalla+One&family=IBM+Plex+Sans+Arabic:wght@400;700&family=Open+Sans:wght@400;500&family=Oswald:wght@400;700&family=Roboto:wght@100;400;500;700;900&display=swap'); /*font-family: 'Roboto', sans-serif;*/
+
+:root{
+    --dark-color:#19283f;
+    --green-color:#33d1cc;
+    --red-color:#ff3150;
+    --yellow-color:#ffc400;
+    --section-color:#eff7fa;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;     
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+}
+
+a{text-decoration: none;}
+.icon{width: 50px;height: 50px;}
+h1, h2, h3{font-family: 'Courgette', cursive;}
+
+/* ============ navbar =============== */
+
+nav{box-shadow: 0 0 2px #ddd;height: 70px;}
+.navbar .navbar-brand{
+    padding: 6px 22px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 30px;
+    color: #202529;
+}
+.navbar .navbar-toggler {font-size: 25px;}
+.navbar .navbar-toggler:focus {box-shadow: none;}
+.navbar li a{margin-right: 20px; font-weight: bold;}
+/* .navbar ul li .active{border-bottom:3px solid var(--yellow-color);} */
+
+/* ================ intro ============== */
+.intro{
+    margin-top: 30px;
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-image: url(../img/cover3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: 20px solid;
+    overflow: hidden;
+}
+.intro .layout{height: 100%;background: rgb(32 37 41 / 23%);}
+.intro .content{
+    width: 100%;
+    height: 100%;
+    background: rgba(2,2,2,0.8);
+}
+.intro .icon{width: 100px;height: 75px;transform: rotate(45deg);opacity: 0.6;}
+.intro .content{flex-direction: column;}
+.intro .content h1 ~ p{
+    color: var(--yellow-color);
+    font-size: 14px;
+    margin: -4px 0 0 69px;
+}
+.intro .content svg{margin: 0 4px 0 0;font-size: 18px;}
+.intro .content p{font-size: 14px;}
+.intro .content :is(span,svg){opacity: 0.8;}
+.intro .degree::after{content: "\00b0 C"}
+
+:is(.intro, .bread-menu, .bread-recipes) .btn{padding: 3px;}
+:is(.intro, .bread-menu, .bread-recipes) .btn button{
+    outline: none;
+    background: transparent;
+    padding: 4px 40px;
+    font-size: 20px;
+    color: var(--yellow-color);
+    transition: all .3s ease-in-out;
+}
+.intro .btn button:hover{
+    color: #fff;
+    background: var(--yellow-color);
+}
+:is(.intro, .bread-menu, .bread-recipes) :is(.btn, .btn button){border: 1px solid var(--yellow-color);}
+
+.intro .imgBoxIcon{
+    position: absolute;
+    bottom: 0;
+    width: 128px;
+}
+/* =============== about ============ */
+.about{margin: 70px 0;}
+.about .smallTitle{color: var(--yellow-color);margin-top: -10px;}
+.about .desc{width: 55%;}
+
+/* =========== bread menu ============*/
+.bread-menu .imgBox{border: 10px solid;height: 360px;}
+.bread-menu .imgBox img{width: 100%;height: 100% !important;}
+.bread-menu .smallTitle{color: var(--yellow-color);margin-top: -10px;}
+.bread-menu h3{font-size: 25px;}
+.bread-menu .features{place-content: space-evenly;}
+.bread-menu .title{text-align: center; font-size: 16px;}
+.bread-menu .features :is(svg, span){font-size: 14px;}
+
+@media screen and (min-width: 576px) {
+    .bread-menu .content{margin: 0.5em; width: calc(100%/3);}
+}
+@media screen and (max-width: 575px) {
+    .bread-menu .content{ margin: 0 20px;}
+    .bread-menu .content:not(:first-child){display: none;}
+}
+.carousalBtns :is(.nextBtn, .prevBtn){
+    background: var(--yellow-color);
+    height: 30px;
+    width: 35px;
+    bottom: 0;
+    position: relative;
+    margin: 10px 50px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    opacity: 0.8;
+}
+.prevBtn{left: 0;float: left;}
+.nextBtn{right: 0;float: right;}
+
+/* =============== bread-recipes ================ */
+.bread-recipes{margin: 70px 0;}
+.bread-recipes .smallTitle{color: var(--yellow-color);margin-top: -10px;}
+.bread-recipes .imgBoxLeft{box-shadow: 1px 1px 4px 2px #919191;}
+.bread-recipes .recet{height: 100%;}
+.bread-recipes .recet .background{
+    height: 100%;
+    width: 100%;
+    background: #202529;
+    color: #fff;
+    box-shadow: 6px 2px 8px #595959;
+}
+.bread-recipes .recet .content{flex-direction: column;border: 1px solid var(--yellow-color);height: 100%;}
+.bread-recipes .recet .content .imgBox{height: 200px;}
+.bread-recipes .recet .content .imgBox img{height: 100% !important;}
+.bread-recipes .recet .content h2{font-size: 80px;margin: -20px 0;}
+.bread-recipes .recet .content sub{font-size: 20px;}
+.bread-recipes .costs{padding: 0 30px;flex-direction: column; height: 100%;}
+.bread-recipes .costs .smallTitle{font-size: 18px;}
+.bread-recipes .costs .desc{margin-left: 20px;}
+.bread-recipes .costs ul li{margin-bottom: 10px;}
+
+/* ============= footer ========== */
+.footer{
+    margin: 20px 0 10px;
+    padding: 30px;
+    color: #fff;
+    background: #1e2529;
+}
+.footer :is(.desc ul, .address) svg{margin-right: 5px;color: var(--yellow-color);font-size: 14px;}
+.footer .desc .imgBox img{width: 120px;}
+.footer .logo{flex-direction: column;}
+.footer .logo h2{font-family: 'Dancing Script', cursive;}
+.footer .logo img{width: 85px;height: 60px;transform: rotate(45deg);opacity: 0.6;}
+.footer .copy span{font-family: 'Courgette', cursive;;color: var(--yellow-color);}
+.footer .connect svg{    
+    border-radius: 50%;
+    background: var(--yellow-color);
+    padding: 10px 13px;
+    margin-right: 17px;
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+}
+.footer .desc li:hover{cursor: pointer;;color: var(--yellow-color);}
+.footer .connect svg:hover{
+    cursor: pointer;
+    background: transparent;
+    color: var(--yellow-color);    
+}
