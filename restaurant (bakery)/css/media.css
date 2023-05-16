@@ -21,6 +21,7 @@
     .bread-menu .features{display:block !important;text-align: center;}
     .bread-recipes .recet .content h2 {font-size: 45px;}
     .bread-recipes .recet .smallTitle {font-size: 20px !important;}
+    .bread-menu .btn button{padding: 4px 13px;font-size: 16px;}
     .bread-recipes .costs{margin-top: 30px;}
     .footer .logo{margin: 35px 0 0;}
 }

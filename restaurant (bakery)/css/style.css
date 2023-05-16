@@ -96,7 +96,7 @@ nav{box-shadow: 0 0 2px #ddd;height: 70px;}
 .bread-menu .smallTitle{color: var(--yellow-color);margin-top: -10px;}
 .bread-menu h3{font-size: 25px;}
 .bread-menu .features{place-content: space-evenly;}
-.bread-menu .title{text-align: center; font-size: 16px;}
+.bread-menu .title{text-align: center; font-size: 16px;height:60px}
 .bread-menu .features :is(svg, span){font-size: 14px;}
 
 @media screen and (min-width: 576px) {
