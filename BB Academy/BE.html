@@ -20,6 +20,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic&display=swap');
@@ -934,12 +935,12 @@
         <div class="container">
             <div class="card bg-light">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-sm-6">
                         <div class="img">
-                            <img src="img/hero-banner-1.jpg" class="img-fluid" alt="">
+                            <img src="img/hero-banner-1.jpg" alt="">
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-sm-6">
                         <div class="data d-flex justify-content-center align-items-center py-3">
                             <div class="logo pt-2 pb-3">
                                 <img src="img/WhatsApp_Image_2023-07-14_at_4.25.30_PM-removebg-preview.png" class="img-fluid" alt="">
@@ -1469,7 +1470,7 @@
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
-                    <span class="d-block text-white font-weight-bold my-4">قم بالإنضمام الى بي بي سوفت</span>
+                    <span class="d-block join-link text-right text-white font-weight-bold my-4">قم بالإنضمام الى بي بي سوفت</span>
                     <div>
                         <p class="d-flex align-items-center justify-content-center"><img src="img/شعار png.ico" style="width: 50%;"><a title="Notnt" href="https://codecanyon.net"><font color="#000000"></font></a></p>
                     </div>
@@ -1481,90 +1482,9 @@
     <!-- ============end footer==================== -->
 
 
-
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            pagination: {
-                el: '.mySwiper-pagination',
-                clickable: true,
-            },
-            grabCursor: true,
-            slidesPerView: 1.2,
-            spaceBetween: 5,
-            loop: false,
-            breakpoints: {
-                320: {
-                    slidesPerView: 1.2,
-                    spaceBetween: 5
-                }, // when window width is <= 480px
-                480: {
-                    slidesPerView: 1.2,
-                    spaceBetween: 5
-                }, // when window width is <= 640px
-                640: {
-                    slidesPerView: 1.3,
-                    spaceBetween: 10,
-                },
-                768: {
-                    slidesPerView: 2.3,
-                    spaceBetween: 40,
-                },
-                1024: {
-                    slidesPerView: 3.3,
-                    spaceBetween: 10,
-                },
-            },
-
-        });
-
-        /* =====================================================
-        TESTIMONIALS SLIDER
-        ===================================================== */
-        var testimonialsSlider = new Swiper('.js-testimonials-slider', {
-            spaceBetween: 30,
-            grabCursor: true,
-            pagination: {
-                el: '.js-testimonials-pagination',
-                clickable: true,
-            },
-            breakpoints: {
-                767: {
-                    slidesPerView: 2,
-                },
-            },
-        });
-        // ===================== gates
-        var orgSlider = new Swiper('.organization-swiper-container', {
-            spaceBetween: 30,
-            grabCursor: true,
-            pagination: {
-                el: '.organization-swiper-pagination',
-                clickable: true,
-            },
-            breakpoints: {
-                767: {
-                    slidesPerView: 2,
-                },
-            },
-        });
-
-        // ===================== gates
-        var instructorSlider = new Swiper('.instructor-swiper-container', {
-            spaceBetween: 30,
-            grabCursor: true,
-            pagination: {
-                el: '.instructor-pagination',
-                clickable: true,
-            },
-            breakpoints: {
-                767: {
-                    slidesPerView: 3,
-                },
-            },
-        });
-        
-    </script>
+    <script src="js/BB.js"></script>
+    
 </body>
 </html>

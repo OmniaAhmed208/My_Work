@@ -160,8 +160,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
-.mySwiper .swiper-pagination{
-    margin-top: 0px;
+
+.mySwiper .swiper-pagination {
+    margin-top: -80px;
     bottom: auto;
 }
 .mySwiper .swiper-pagination-bullet{
@@ -224,8 +225,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .question{margin: 120px 0;}
 .question .data{flex-direction: column;}
 .question .logo{width: 120px;}
-.question .img{margin: 0 40px 0 0;}
-.question .img img{transform: scaleY(1.4);border: 10px solid var(--dark-color);}
+.question .img{margin: 0 30px 0 0;width: 100%;height: 100%;}
+.question .img img{transform: scaleY(1.2);border: 10px solid var(--dark-color);width: 100%;height: 100%;}
 
 /* =========== reviews =========== */
 .testimonials .section-header .title{color: var(--dark-color);}
