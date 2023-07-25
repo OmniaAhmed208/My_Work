@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BE</title>
+    <!-- font type -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Dancing+Script:wght@700&family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://themedcraft.com/assets/sw/swiper-element.css">
+    <!-- <link rel='icon' href='https://demo.scopehrd.org/store/1/fonts/photo_2023-03-04_22-27-59-removebg-preview.png'> -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <!-- swipper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/courses.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic&display=swap');
+
+        body{font-family: 'Noto Kufi Arabic', sans-serif!important;}
+        .rtl {font-family: 'Noto Kufi Arabic', sans-serif!important;direction: rtl!important;}
+    </style>
+</head>
+<body class="rtl">
+    <div class="top-navbar d-flex border-bottom">
+        <div class="container d-flex justify-content-between flex-column flex-lg-row">
+            <div class="top-contact-box border-bottom d-flex flex-column flex-md-row align-items-center justify-content-center">
+    
+                <div class="d-flex align-items-center justify-content-center"></div>
+    
+                <div class="d-flex align-items-center justify-content-between justify-content-md-center">
+                    <form action="/locale" method="post" class="mr-15 mx-md-20">
+                        <input type="hidden" name="_token" value="Agz3ymX42h6gJcWTQ9KiteaVDzuBv43bgrVAM5vn">
+
+                        <input type="hidden" name="locale">
+
+                        <div class="language-select">
+                            <div id="localItems"
+                                    data-selected-country="IQ"
+                                    data-countries='{&quot;IQ&quot;:&quot;Arabic&quot;,&quot;US&quot;:&quot;English&quot;}'
+                            ></div>
+                        </div>
+                    </form>
+                    
+                    <form action="/search" method="get" class="form-inline my-2 my-lg-0 navbar-search position-relative">
+                        <input class="form-control mr-5 rounded" type="text" name="search" placeholder="بحث..." aria-label="Search">
+    
+                        <button type="submit" class="btn-transparent d-flex align-items-center justify-content-center search-icon">
+                            <i class="fa-solid fa-magnifying-glass mr-10" width="20" height="20"></i>
+                            <!-- <i data-feather="search" width="20" height="20" class="mr-10"></i> -->
+                        </button>
+                    </form>
+                </div>
+            </div>
+    
+            <div class="xs-w-100 d-flex align-items-center justify-content-between ">
+                <div class="d-flex">
+    
+                    <div class="dropdown">
+                        <button type="button" disabled class="btn btn-transparent dropdown-toggle" id="navbarShopingCart" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="fa-solid fa-cart-shopping fa-4x mr-10" width="20" height="20"></i>
+                            <!-- <i data-feather="shopping-cart" width="20" height="20" class="mr-10"></i> -->
+                        </button>
+    
+                        <div class="dropdown-menu" aria-labelledby="navbarShopingCart">
+                            <div class="d-md-none border-bottom mb-20 pb-10 text-right">
+                                <i class="close-dropdown" data-feather="x" width="32" height="32" class="mr-10"></i>
+                            </div>
+                            <div class="h-100">
+                                <div class="navbar-shopping-cart h-100" data-simplebar>
+                                    <div class="d-flex align-items-center text-center py-50">
+                                        <i class="fa-solid fa-cart-shopping mr-10" width="20" height="20"></i>
+                                        <!-- <i data-feather="shopping-cart" width="20" height="20" class="mr-10"></i> -->
+                                        <span class="">عربتك فارغة</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="border-left mx-5 mx-lg-15"></div>
+    
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-transparent dropdown-toggle" disabled id="navbarNotification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa-regular fa-bell mr-10 fa-4x" width="20" height="20"></i>
+                            <!-- <i data-feather="bell" width="20" height="20" class="mr-10"></i> -->
+                        </button>
+    
+                        <div class="dropdown-menu pt-20" aria-labelledby="navbarNotification">
+                            <div class="d-flex flex-column h-100">
+                                <div class="mb-auto navbar-notification-card" data-simplebar>
+                                    <div class="d-md-none border-bottom mb-20 pb-10 text-right">
+                                        <i class="close-dropdown" data-feather="x" width="32" height="32" class="mr-10"></i>
+                                    </div>
+    
+                                    <div class="d-flex align-items-center text-center py-50">
+                                        <i class="fa-regular fa-bell mr-10" width="20" height="20"></i>
+                                        <!-- <i data-feather="bell" width="20" height="20" class="mr-10"></i> -->
+                                        <span class="">الاشعارات الفارغة</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="d-flex align-items-center ml-md-50">
+                    <!-- <i class="fa-regular fa-bell" width="20" height="20" class="mr-10"></i> -->
+                    <a href="/login" class="py-5 px-10 mr-10 text-dark-blue font-14">تسجيل الدخول</a>
+                    <a href="/register" class="py-5 px-10 text-dark-blue font-14">تسجيل</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="navbarVacuum"></div>
+
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between w-100">
+                <a class="navbar-brand navbar-order d-flex align-items-center justify-content-center mr-0 " href="/">
+                    <img src="img/WhatsApp_Image_2023-07-14_at_4.25.30_PM-removebg-preview.png" style="max-width:70px" alt="site logo">
+                </a>
+    
+                <button class="navbar-toggler navbar-order" type="button" id="navbarToggle">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="mx-lg-30 d-none d-lg-flex flex-grow-1 navbar-toggle-content " id="navbarContent">
+                    <div class="navbar-toggle-header text-right d-lg-none">
+                        <button class="btn-transparent" id="navbarClose">
+                            <i data-feather="x" width="32" height="32"></i>
+                        </button>
+                    </div>
+    
+                    <ul class="navbar-nav mr-auto d-flex align-items-center">
+                        <li class="mr-lg-25">
+                            <div class="menu-category">
+                                <ul>
+                                    <li class="cursor-pointer user-select-none d-flex xs-categories-toggle">
+                                        <i class="fa-solid fa-border-all ml-10 d-none d-lg-block" width="20" height="20"></i>
+                                        <!-- <i data-feather="grid" width="20" height="20" class="mr-10 d-none d-lg-block"></i> -->
+                                        الاقسام
+                                        <ul class="cat-dropdown-menu">
+                                            <li>
+                                                <a href="/categories/شهادات-إحترافية">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="/store/1/default_images/categories_icons/anchor.png" class="cat-dropdown-menu-icon mr-10" alt="شهادات إحترافية icon">
+                                                        شهادات إحترافية
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/categories/دبلومات-مهنية">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="/store/1/default_images/categories_icons/code.png" class="cat-dropdown-menu-icon mr-10" alt="دبلومات مهنية icon">
+                                                        دبلومات مهنية
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/categories/الدراسات-العليا">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="/store/1/default_images/categories_icons/pie-chart.png" class="cat-dropdown-menu-icon mr-10" alt="الدراسات العليا icon">
+                                                        الدراسات العليا
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">الصفحة الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/classes?sort=newest">الدورات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/vision">الرؤية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/message">الرساله</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blog">المقالات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/find-my-certificate">تحقق من شهادتك</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="nav-icons-or-start-live navbar-order">
+                    <a href="/become-instructor" class="d-none d-lg-flex btn btn-sm bg-cafe text-white nav-start-a-live-btn">
+                        سجل الآن
+                    </a>
+                    <a href="/become-instructor" class="d-flex d-lg-none text-primary nav-start-a-live-btn font-14">
+                        سجل الآن
+                    </a>
+                    
+                    <div class="d-none nav-notify-cart-dropdown top-navbar ">
+                        <div class="dropdown">
+                            <button type="button" disabled class="btn btn-transparent dropdown-toggle" id="navbarShopingCart" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <i class="fa-solid fa-cart-shopping mr-10" width="20" height="20"></i>
+                                <!-- <i data-feather="shopping-cart" width="20" height="20" class="mr-10"></i> -->
+                            </button>
+    
+                            <div class="dropdown-menu" aria-labelledby="navbarShopingCart">
+                                <div class="d-md-none border-bottom mb-20 pb-10 text-right">
+                                    <i class="close-dropdown" data-feather="x" width="32" height="32" class="mr-10"></i>
+                                </div>
+                                <div class="h-100">
+                                    <div class="navbar-shopping-cart h-100" data-simplebar>
+                                        <div class="d-flex align-items-center text-center py-50">
+                                            <i class="fa-solid fa-cart-shopping mr-10" width="20" height="20"></i>
+                                            <!-- <i data-feather="shopping-cart" width="20" height="20" class="mr-10"></i> -->
+                                            <span class="">عربتك فارغة</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="border-left mx-15"></div>
+    
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-transparent dropdown-toggle" disabled id="navbarNotification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa-regular fa-bell mr-10" width="20" height="20"></i>
+                                <!-- <i data-feather="bell" width="20" height="20" class="mr-10"></i> -->
+                            </button>
+    
+                            <div class="dropdown-menu pt-20" aria-labelledby="navbarNotification">
+                                <div class="d-flex flex-column h-100">
+                                    <div class="mb-auto navbar-notification-card" data-simplebar>
+                                        <div class="d-md-none border-bottom mb-20 pb-10 text-right">
+                                            <i class="close-dropdown" data-feather="x" width="32" height="32" class="mr-10"></i>
+                                        </div>
+    
+                                        <div class="d-flex align-items-center text-center py-50">
+                                            <i class="fa-regular fa-bell" width="20" height="20" class="mr-10"></i>
+                                            <!-- <i data-feather="bell" width="20" height="20" class="mr-10"></i> -->
+                                            <span class="">الاشعارات الفارغة</span>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============ start header =========== -->
+    <section class="header-courses text-center mb-4" style="background: url('img/hero-banner-2.jpg') no-repeat center center fixed;">
+        <div class="data">
+          <div class="container">
+            <h2 class="fs-1 py-3 text-white">BB Soft Academy</h2>
+            <div class="info d-flex justify-content-center align-items-center">
+                <div class="logo pt-2 pb-3">
+                    <img src="img/شعار_الاكاديمية-removebg-preview.png" class="img-fluid" alt="">
+                </div>
+                <div class="que text-center d-flex justify-content-center align-items-center w-100">
+                    <h2 class="fs-4 text-white">Courses</h2>
+                    <a href="#" class="mt-1 mb-3 btn bg-cafe text-dark fs-5">12 فصول</a>
+                    <div class="rounded-3 search-input bg-white p-10 flex-grow-1 w-75">
+                        <form action="/search" method="get">
+                            <div class="form-group d-flex align-items-center m-0">
+                                <input type="text" name="search" class="form-control border-0 mx-2 fs-5" placeholder="ابحث عن معلم او فصل او بوابة"/>
+                                <button type="submit" class="btn bg-cafe text-dark rounded fw-bold">بحث</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- ============ end header ============= -->
+
+    <!-- ========== filter ===========  -->
+    <section class="content my-4">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="row" id="pagination-container">
+                        <div class="col-12 col-lg-6 mt-20">
+                            <div class="course">
+                                <a href="https://demo.scopehrd.org/course/محترف موارد بشرية دولي PHRI">
+                                    <img src="img/TOT.jpg" class="img-cover" alt="محترف موارد بشرية دولي PHRI">
+                                </a>
+                                <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;dates=20230102T011900Z/20230102T011900Z&amp;ctz=UTC&amp;text=%D9%85%D8%AD%D8%AA%D8%B1%D9%81+%D9%85%D9%88%D8%A7%D8%B1%D8%AF+%D8%A8%D8%B4%D8%B1%D9%8A%D8%A9+%D8%AF%D9%88%D9%84%D9%8A+PHRI" target="_blank" class="webinar-notify d-flex align-items-center justify-content-center">
+                                    <i data-feather="bell" width="20" height="20" class="webinar-icon"></i>
+                                </a>
+                                <div class="course_content">
+                                    <div class="user-inline-avatar d-flex align-items-center">
+                                        <div class="avatar bg-gray200">
+                                            <img src="img/شعار png.ico" class="img-cover" alt="BB">
+                                        </div>
+                                        <a href="" target="_blank" class="user-name mx-5 font-14">BB Soft</a>
+                                    </div>
+
+                                    <a href="https://demo.scopehrd.org/course/محترف موارد بشرية دولي PHRI" class="course_name">
+                                        <h3 class="mt-15 webinar-title font-weight-bold font-16 text-dark-blue">محترف موارد بشرية دولي PHRI</h3>
+                                    </a>
+                                    <span class="d-block font-14 mt-10">In <a href="/categories/شهادات-إحترافية" target="_blank" class="text-decoration-underline">شهادات إحترافية</a></span>
+                                    <!-- <div class="stars-card d-flex align-items-center"></div> -->
+
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <span style="font-size:140%;color:orange;">★★★★★</span>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <i width="20" height="20" class="fa fa-clock text-muted ml-2 webinar-icon"></i>
+                                            <span class="duration font-14 ml-5">60:00 ساعات</span>
+                                        </div>
+    
+                                        <div class="vertical-line mx-15"></div>
+    
+                                        <div class="d-flex align-items-center">
+                                            <i width="20" height="20" class="fa fa-calendar text-muted ml-2 webinar-icon"></i>
+                                            <span class="date-published font-14 ml-5">1 Jan 2023</span>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 col-lg-6 mt-20">
+                            <div class="course">
+                                <a href="https://demo.scopehrd.org/course/محترف موارد بشرية دولي PHRI">
+                                    <img src="img/TOT.jpg" class="img-cover" alt="محترف موارد بشرية دولي PHRI">
+                                </a>
+                                <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;dates=20230102T011900Z/20230102T011900Z&amp;ctz=UTC&amp;text=%D9%85%D8%AD%D8%AA%D8%B1%D9%81+%D9%85%D9%88%D8%A7%D8%B1%D8%AF+%D8%A8%D8%B4%D8%B1%D9%8A%D8%A9+%D8%AF%D9%88%D9%84%D9%8A+PHRI" target="_blank" class="webinar-notify d-flex align-items-center justify-content-center">
+                                    <i data-feather="bell" width="20" height="20" class="webinar-icon"></i>
+                                </a>
+                                <div class="course_content">
+                                    <div class="user-inline-avatar d-flex align-items-center">
+                                        <div class="avatar bg-gray200">
+                                            <img src="img/شعار png.ico" class="img-cover" alt="BB">
+                                        </div>
+                                        <a href="" target="_blank" class="user-name mx-5 font-14">BB Soft</a>
+                                    </div>
+
+                                    <a href="https://demo.scopehrd.org/course/محترف موارد بشرية دولي PHRI" class="course_name">
+                                        <h3 class="mt-15 webinar-title font-weight-bold font-16 text-dark-blue">محترف موارد بشرية دولي PHRI</h3>
+                                    </a>
+                                    <span class="d-block font-14 mt-10">In <a href="/categories/شهادات-إحترافية" target="_blank" class="text-decoration-underline">شهادات إحترافية</a></span>
+
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <span style="font-size:140%;color:orange;">★★★★★</span>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <i width="20" height="20" class="fa fa-clock text-muted ml-2 webinar-icon"></i>
+                                            <span class="duration font-14 ml-5">60:00 ساعات</span>
+                                        </div>
+    
+                                        <div class="vertical-line mx-15"></div>
+    
+                                        <div class="d-flex align-items-center">
+                                            <i width="20" height="20" class="fa fa-calendar text-muted ml-2 webinar-icon"></i>
+                                            <span class="date-published font-14 ml-5">1 Jan 2023</span>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 col-lg-6 mt-20">
+                            <div class="course">
+                                <a href="https://demo.scopehrd.org/course/محترف موارد بشرية دولي PHRI">
+                                    <img src="img/TOT.jpg" class="img-cover" alt="محترف موارد بشرية دولي PHRI">
+                                </a>
+                                <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;dates=20230102T011900Z/20230102T011900Z&amp;ctz=UTC&amp;text=%D9%85%D8%AD%D8%AA%D8%B1%D9%81+%D9%85%D9%88%D8%A7%D8%B1%D8%AF+%D8%A8%D8%B4%D8%B1%D9%8A%D8%A9+%D8%AF%D9%88%D9%84%D9%8A+PHRI" target="_blank" class="webinar-notify d-flex align-items-center justify-content-center">
+                                    <i data-feather="bell" width="20" height="20" class="webinar-icon"></i>
+                                </a>
+                                <div class="course_content">
+                                    <div class="user-inline-avatar d-flex align-items-center">
+                                        <div class="avatar bg-gray200">
+                                            <img src="img/شعار png.ico" class="img-cover" alt="BB">
+                                        </div>
+                                        <a href="" target="_blank" class="user-name mx-5 font-14">BB Soft</a>
+                                    </div>
+
+                                    <a href="https://demo.scopehrd.org/course/محترف موارد بشرية دولي PHRI" class="course_name">
+                                        <h3 class="mt-15 webinar-title font-weight-bold font-16 text-dark-blue">محترف موارد بشرية دولي PHRI</h3>
+                                    </a>
+                                    <span class="d-block font-14 mt-10">In <a href="/categories/شهادات-إحترافية" target="_blank" class="text-decoration-underline">شهادات إحترافية</a></span>
+
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <span style="font-size:140%;color:orange;">★★★★★</span>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <i width="20" height="20" class="fa fa-clock text-muted ml-2 webinar-icon"></i>
+                                            <span class="duration font-14 ml-5">60:00 ساعات</span>
+                                        </div>
+    
+                                        <div class="vertical-line mx-15"></div>
+    
+                                        <div class="d-flex align-items-center">
+                                            <i width="20" height="20" class="fa fa-calendar text-muted ml-2 webinar-icon"></i>
+                                            <span class="date-published font-14 ml-5">1 Jan 2023</span>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <section class="mt-20">
+                        <form action="/classes" method="get" id="filtersForm">
+                            <div id="topFilters" class="shadow-lg border border-gray300 rounded-sm p-10 p-md-20">
+                                <div class="d-flex align-items-center mb-3 w-100">
+                                    <select name="sort" class="form-control font-14">
+                                        <option disabled selected>Sort by</option>
+                                        <option value="">All</option>
+                                        <option value="newest"  selected="selected" >Newest</option>
+                                        <option value="expensive" >Highest Price</option>
+                                        <option value="inexpensive" >Lowest Price</option>
+                                        <option value="bestsellers" >Bestsellers</option>
+                                        <option value="best_rates" >Best Rated</option>
+                                    </select>
+                                </div>
+
+                                <div class="row align-items-center">
+                                    <div class="w-100 d-block d-md-flex flex-column align-items-center justify-content-end my-lg-0">
+                                        <div class="w-100 d-flex align-items-center justify-content-between mx-0 mx-md-20 my-2">
+                                            <label class="mb-0 mr-10 cursor-pointer" for="upcoming">قادمة</label>
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" name="upcoming" class="custom-control-input" id="upcoming" >
+                                                <label class="custom-control-label" for="upcoming"></label>
+                                            </div>
+                                        </div>
+                                        <div class="w-100 d-flex align-items-center justify-content-between">
+                                            <label class="mb-0 mr-10 cursor-pointer" for="free">Free</label>
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" name="free" class="custom-control-input" id="free" >
+                                                <label class="custom-control-label" for="free"></label>
+                                            </div>
+                                        </div>
+                                        <div class="w-100 d-flex align-items-center justify-content-between mx-0 mx-md-20 my-2">
+                                            <label class="mb-0 mr-10 cursor-pointer" for="discount">Discount</label>
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" name="discount" class="custom-control-input" id="discount" >
+                                                <label class="custom-control-label" for="discount"></label>
+                                            </div>
+                                        </div>
+                                        <div class="w-100 d-flex align-items-center justify-content-between">
+                                            <label class="mb-0 mr-10 cursor-pointer" for="download">تنزيل</label>
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" name="downloadable" class="custom-control-input" id="download" >
+                                                <label class="custom-control-label" for="download"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex align-items-center">
+                                        <div class="checkbox-button primary-selected">
+                                            <input type="radio" name="card" id="gridView" value="grid"  checked="checked" >
+                                            <label for="gridView" class="bg-white border-0 mb-0">
+                                                <i data-feather="grid" width="25" height="25" class=" text-primary "></i>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox-button primary-selected ml-10">
+                                            <input type="radio" name="card" id="listView" value="list" >
+                                            <label for="listView" class="bg-white border-0 mb-0">
+                                                <i data-feather="list" width="25" height="25" class=""></i>
+                                            </label>
+                                        </div>
+                                    </div>
+                
+                                </div>
+                            </div>
+                        </form>    
+                    </section>
+
+                    <div class="mt-20 p-20 rounded-sm shadow-lg border border-gray300 filters-container">
+                        <div class="">
+                            <h3 class="category-filter-title font-20 font-weight-bold text-dark-blue text-right">Type</h3>
+                            <div class="pt-10">
+                                <div class="d-flex align-items-center justify-content-between mt-20">
+                                    <label class="cursor-pointer" for="filterLanguagebundle">Course Bundle</label>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" name="type[]" id="filterLanguagebundle" value="bundle"  class="custom-control-input">
+                                            <label class="custom-control-label" for="filterLanguagebundle"></label>
+                                        </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mt-20">
+                                    <label class="cursor-pointer" for="filterLanguagewebinar">جلسة مباشر</label>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" name="type[]" id="filterLanguagewebinar" value="webinar"  class="custom-control-input">
+                                        <label class="custom-control-label" for="filterLanguagewebinar"></label>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mt-20">
+                                    <label class="cursor-pointer" for="filterLanguagecourse">الدورات</label>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" name="type[]" id="filterLanguagecourse" value="course"  class="custom-control-input">
+                                        <label class="custom-control-label" for="filterLanguagecourse"></label>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mt-20">
+                                    <label class="cursor-pointer" for="filterLanguagetext_lesson">دروس الدورة المكتوبة</label>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" name="type[]" id="filterLanguagetext_lesson" value="text_lesson"  class="custom-control-input">
+                                        <label class="custom-control-label" for="filterLanguagetext_lesson"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        
+                        <div class="mt-25 pt-25 border-top border-gray300">
+                            <h3 class="category-filter-title font-20 font-weight-bold text-dark-blue text-right">المزيد من الخيارات</h3>
+                            <div class="pt-10">
+                                <div class="d-flex align-items-center justify-content-between mt-20">
+                                    <label class="cursor-pointer" for="filterLanguagesubscribe">اظهر المشتركين فقط</label>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" name="moreOptions[]" id="filterLanguagesubscribe" value="subscribe"  class="custom-control-input">
+                                        <label class="custom-control-label" for="filterLanguagesubscribe"></label>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mt-20">
+                                    <label class="cursor-pointer" for="filterLanguagecertificate_included">اظهر الشهادات المضمنة فقط</label>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" name="moreOptions[]" id="filterLanguagecertificate_included" value="certificate_included"  class="custom-control-input">
+                                        <label class="custom-control-label" for="filterLanguagecertificate_included"></label>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mt-20">
+                                    <label class="cursor-pointer" for="filterLanguagewith_quiz">اظهر فقط الجلسات التي تحتوي علي اختبارات</label>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" name="moreOptions[]" id="filterLanguagewith_quiz" value="with_quiz"  class="custom-control-input">
+                                        <label class="custom-control-label" for="filterLanguagewith_quiz"></label>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mt-20">
+                                    <label class="cursor-pointer" for="filterLanguagefeatured">اظهر الفئات المميزة فقط</label>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" name="moreOptions[]" id="filterLanguagefeatured" value="featured"  class="custom-control-input">
+                                        <label class="custom-control-label" for="filterLanguagefeatured"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <button type="submit" class="btn btn-sm bg-cafe btn-block mt-30 fw-bold">فلترة العناصر</button>
+                    </div>  
+
+                </div>
+            </div>
+        </div>            
+    </section>    
+
+    <div class="my-3">
+        <nav class="d-flex justify-content-center">
+            <ul id="custom-pagination" class="custom-pagination d-flex align-items-center justify-content-center"></ul>
+        </nav>
+    </div>
+
+    <!-- =========== footer ================== -->
+    <footer class="footer position-relative user-select-none py-4 mt-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-3">
+                    <span class="d-block text-white font-weight-bold text-right my-4">تواصل معانا</span>
+                    <div class="text-right">
+                        <p class="mb-2"><i class="fa-solid fa-location-dot text-white pl-2"></i><a href="" class="text-white">اليمن - عدن - كريتر - مقابل ادارة المياة</a></p>
+                        <p class="mb-2"><i class="fa-brands fa-whatsapp text-white pl-2"></i><a href="" class="text-white">+967 779 333 511</a><br></p>
+                        <p class="mb-2"><i class="fa-regular fa-address-card text-white pl-2"></i><a href="" class="text-white">www.bbsoft-academy.com</a></p>
+                        <p class="mb-2"><i class="fa-regular fa-envelope text-white pl-2"></i><a href="" class="text-white">info@bbsoft-academy.com</a></p>
+                        <p class="mt-2 connect">
+                            <a href="" class="text-dark"><i class="fa-brands fa-facebook fs-5 p-2"></i></a>
+                            <a href="" class="text-dark"><i class="fa-brands fa-linkedin-in fs-5 mx-3 p-2"></i></a>
+                            <a href="" class="text-dark"><i class="fa-brands fa-youtube fs-5 p-2"></i></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <span class="d-block text-white font-weight-bold my-4 text-right">روابط إضافية</span>
+                    <div class="text-right text-white">
+                        <p class="mb-2"><a href="/login" class="text-white">- تسجيل الدخول</a></p>
+                        <p class="mb-2"><a href="/register" class="text-white">- تسجيل</a><br></p>
+                        <p class="mb-2"><a href="/blog" class="text-white">- مقالات</a></p>
+                        <p class="mb-2"><a href="/contact" class="text-white">- اتصل بنا</a></p>
+                        <p class="mb-2"><a href="/pages/terms" class="text-white">- الشروط والقواعد</a></p>
+                        <p><a href="/pages/about" class="text-white">- معلومات عنا</a></p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="join py-4 px-3 rounded text-right">
+                        <h2 class="text-white">انضم لنا اليوم</h2>
+                        <p class="text-white py-4">#ستحصل علي احدث العروض والتخفيضات علي الايميل.</p>
+                        <form action="/newsletters" method="post">
+                            <input type="hidden" name="_token" value="POIerD2OepY707A679gYUqDeLrGRx5gtSz3u8IhE">
+                            <div class="form-group m-0 d-flex align-items-center">
+                                <div class="w-100">
+                                    <input type="text" name="newsletter_email" class="form-control border-0 " placeholder="ادخل ايميلك هنا"/>
+                                </div>
+                                <button type="submit" class="btn text-white rounded w-50 mt-3">انضمام</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <span class="d-block join-link text-right text-white font-weight-bold my-4">قم بالإنضمام الى بي بي سوفت</span>
+                    <div>
+                        <p class="d-flex align-items-center justify-content-center"><img src="img/شعار png.ico" style="width: 50%;"><a title="Notnt" href="https://codecanyon.net"><font color="#000000"></font></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ============end footer=============== -->
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/BB.js"></script>
+    <script src="js/pagination.js"></script>
+    
+</body>
+</html>
