@@ -3,6 +3,7 @@
 .header-courses .h1 {padding-bottom: 30px;}
 .header-courses .stats {margin-bottom: 30px;}
 .header-courses .stats:hover{color: #fff;}
+.header-courses .que .btn:hover{ background: var(--cafe-color);}
 .header-courses p
 {
     padding-top: 20px;
@@ -42,4 +43,5 @@
 .pagination-controls {display: flex;justify-content: center;margin-top: 20px;}  
 .pagination-controls button {margin: 0 5px;}
   
+/* .blogs .blog-grid-detail .detail {height: 150px;} */
   
