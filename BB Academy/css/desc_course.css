@@ -1,0 +1,27 @@
+.desc_course{
+    box-shadow: 0 5px 40px rgb(0 0 0 / 12%);
+    border-radius: 5px;
+}
+#single_course_header {
+    padding: 0;
+    height: 550px;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.standard_wrapper{background: rgba(2,2,2,0.7);height: 100%;}
+.single_course_title{height: 100%;}
+
+.stars-card svg.active {color: #ffc600;fill: #ffc600;}
+.tab-content p{line-height: 2;}
