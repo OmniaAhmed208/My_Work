@@ -25,3 +25,34 @@
 
 .stars-card svg.active {color: #ffc600;fill: #ffc600;}
 .tab-content p{line-height: 2;}
+
+.reviews-rate {
+    vertical-align: top;
+    text-align: center;
+}
+.reviews-rate .review-number {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -2px;
+}
+.progress{
+    border-radius: 5px;
+    background: #f2f3f5 !important;
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(100% - 160px);
+}
+.progress .progress-bar {
+    border-radius: 5px;
+    background: var(--cafe-color) !important;
+    height: 20px;
+}
+
+.reviews-stars select{
+    padding: 0px 10px;
+    margin: 17px 0 0;
+    box-shadow: 2px 2px 2px #ddd;
+    background: #f2f3f5 !important;
+}

@@ -1,0 +1,16 @@
+.profile .filter .nav-pills .nav-link.active{background-color: var(--cafe-color) !important;}
+.header-courses p {
+    padding-top: 20px;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #454545;
+}
+#nav-courses img{object-fit: fill;}
+.profile .stats-item{margin-top: -70px;padding: 66px 0 20px;border-color: var(--cafe-color) !important;}
+.filter .about p{line-height: 2;}
+:is(#nav-articles,#nav-meeting) .no-result.default-no-result .no-result-logo {
+    background-image: linear-gradient(180deg,#dbffe800,rgba(255, 255, 255, 0));
+    max-width: 500px !important;
+    max-height: 500px !important;
+}
